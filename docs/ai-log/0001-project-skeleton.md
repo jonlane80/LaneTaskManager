@@ -24,11 +24,12 @@ Created the project skeleton on branch `chore/project-skeleton`:
 - **Source:** `src/lane_task_manager/__init__.py` with `__version__`.
 - **Tests:** `tests/test_package.py` placeholder test; pytest configured in `pyproject.toml`.
 - **Linting:** ruff for linting and formatting (rules E, W, F, I, B, UP, SIM; line length 100).
-- **CI:** `.github/workflows/ci.yml` runs ruff lint/format checks and pytest on Python 3.10–3.13
+- **CI:** `.github/workflows/ci.yml` runs ruff lint/format checks and pytest on Python 3.10–3.14
   for pushes to `main` and all PRs.
 - **Repo files:** Python-centric `.gitignore`, `CLAUDE.md` with setup, commands and conventions
   (including keeping this log up to date), `Readme.md` renamed to `README.md` and expanded.
 - **Docs:** `docs/README.md` index and `docs/ai-log/` with a format guide and this first entry.
 
-Notes: the machine's default `python` is 3.6, so local verification used Python 3.12 (miniconda).
+Notes: the machine's default `python` was 3.6; after the user upgraded to Python 3.14.7, the local
+`.venv` was rebuilt on 3.14 and lint and tests re-verified, and 3.14 was added to the CI matrix.
 The GitHub CLI isn't installed, so the branch was pushed and the PR opened via GitHub's web UI.
