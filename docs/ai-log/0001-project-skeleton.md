@@ -32,4 +32,4 @@ Created the project skeleton on branch `chore/project-skeleton`:
 
 Notes: the machine's default `python` was 3.6; after the user upgraded to Python 3.14.7, the local
 `.venv` was rebuilt on 3.14 and lint and tests re-verified, and 3.14 was added to the CI matrix.
-The GitHub CLI isn't installed, so the branch was pushed and the PR opened via GitHub's web UI.
+The GitHub CLI wasn't initially installed; once the user installed it, the PR was opened with `gh`.
