@@ -1,1 +1,0 @@
-The start of a repo for the multiverse interview test.
